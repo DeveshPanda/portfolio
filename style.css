@@ -5,7 +5,7 @@ body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline:auto;
-    padding: 0 30px
+    padding: 0 30px;
   }
 
   nav {
@@ -29,3 +29,44 @@ body {
     border-bottom-color: oklch(85% 3% 200);
     padding-bottom: 8px;
   }
+
+  #experience {
+    clear: both;  
+  }
+
+  :root {
+    --color-accent: oklch(75% 10% 250);
+  }
+
+  html {
+    accent-color: var(--color-accent);
+  }
+
+  nav a:hover {
+    border-bottom-width: 0.4em;
+    border-bottom-color: var(--color-accent);
+    background-color: oklch(from var(--color-accent) 95% 5% h);
+    padding-bottom: 8px; 
+  }
+
+  form{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column: 1 / -1; 
+    gap: 1em;
+  }
+
+  label {
+    display: grid;
+    grid-template-columns: subgrid; 
+  }
+
+  button{
+    grid-column: 1 / -1; 
+  }
+
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  }
+
