@@ -93,5 +93,12 @@ body {
   }
   body {
       font-family: "Helvetica", sans-serif;
-      background: linear-gradient(to bottom, oklch(90% 5% 250), oklch(90% 5% 200));
+      background: linear-gradient(to bottom, oklch(95% 5% 250), oklch(90% 5% 200));
   }
+  section {
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px oklch(40% 0.05 250 / 0.1);
+    background-color: oklch(90% 10% 265);
+    }
