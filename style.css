@@ -30,10 +30,6 @@ body {
     padding-bottom: 8px;
   }
 
-  #experience {
-    clear: both;  
-  }
-
   :root {
     --color-accent: oklch(75% 10% 250);
   }
