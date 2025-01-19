@@ -69,9 +69,29 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   }
-  
+
   article{
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
+  }
+
+  h2{
+    margin: 0;
+  }
+
+  h1{
+    font-size: 200%;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    line-height: 1.0;
+    text-wrap: balance;
+  }
+  h1, h2{
+    font-family: "Garamond", serif;
+  }
+  body {
+      font-family: "Helvetica", sans-serif;
+      background: linear-gradient(to bottom, oklch(90% 5% 250), oklch(90% 5% 200));
   }
