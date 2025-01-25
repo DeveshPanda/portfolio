@@ -8,11 +8,18 @@ body {
     padding: 0 30px;
   }
 
+  input, textarea, button, select {
+    font-family: inherit;
+    font-size: 80%;      
+  }
+
   nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
   }
 
   nav a {
+    border-bottom-color: var(--border-color);
     flex: 1;
     text-decoration: none;
     color: inherit;
@@ -21,21 +28,39 @@ body {
     margin-bottom: 1em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch;
   }
 
   nav a.current{
     border-bottom-width: 0.4em;
-    border-bottom-color: oklch(85% 3% 200);
+    border-bottom-color: var(--border-color);
     padding-bottom: 8px;
   }
 
   :root {
     --color-accent: oklch(75% 10% 250);
   }
-
+  
   html {
     accent-color: var(--color-accent);
+    color-scheme: light dark;
+  }
+
+  html[color-scheme="light"] {
+    color-scheme: light;
+  }
+
+  html[color-scheme="dark"] {
+      color-scheme: dark;
+  }
+
+  html[color-scheme="automatic"] {
+    color-scheme: light dark
+  }
+
+  .color-scheme{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
   }
 
   nav a:hover {
@@ -89,12 +114,12 @@ body {
   }
   body {
       font-family: "Helvetica", sans-serif;
-      background: linear-gradient(to bottom, oklch(95% 5% 250), oklch(90% 5% 200));
+      /*background: linear-gradient(to bottom, oklch(95% 5% 250), oklch(90% 5% 200));*/
   }
   section {
     padding: 1em;
     margin-bottom: 2em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px oklch(40% 0.05 250 / 0.1);
-    background-color: oklch(90% 10% 265);
+    /*box-shadow: 0 4px 8px oklch(40% 0.05 250 / 0.1);
+    background-color: oklch(90% 10% 265); */
     }

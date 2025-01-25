@@ -18,7 +18,7 @@ let pages = [
     { url: 'https://github.com/DeveshPanda', title: "Github"}
   ];
 
-  
+
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 let nav = document.createElement('nav');
@@ -44,7 +44,8 @@ for (let p of pages) {
     nav.append(a);
   }
 
-document.body.insertAdjacentHTML(
+
+  document.body.insertAdjacentHTML(
     'afterbegin',
     `
       <label class="color-scheme">
