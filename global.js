@@ -43,3 +43,17 @@ for (let p of pages) {
 
     nav.append(a);
   }
+document.body.insertAdjacentHTML(
+    'afterbegin',
+    `
+      <label class="color-scheme">
+          Theme:
+          <select id="color-scheme-select">
+            <option value="automatic">Automatic</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+      </label>`
+  );
+
+  const select = document.querySelector('#color-scheme-select');
