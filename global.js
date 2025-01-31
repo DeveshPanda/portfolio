@@ -105,5 +105,12 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
       <p>${project.description}</p>
     `;
     containerElement.appendChild(article);
-});
+  });
 }
+
+/* test code for renderProjects export
+const projectsData = await fetchJSON('../lib/projects.json');
+const container = document.querySelector('.projects');
+renderProjects(projectsData, container, 'h3');
+*/
+
