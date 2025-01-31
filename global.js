@@ -70,3 +70,40 @@ for (let p of pages) {
     document.documentElement.style.setProperty('color-scheme', event.target.value);
     localStorage.colorScheme = event.target.value
   });
+
+  export async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
+        //console.log to see the response
+        console.log(response);
+        
+        const data = await response.json();
+        //console.log to see the data
+        console.log(data);
+        return data;
+
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
+}
+
+export function renderProjects(project, containerElement, headingLevel = 'h2') {
+  containerElement.innerHTML = '';
+  
+  if (!project || !containerElement) {
+    console.error('Invalid project or containerElement');
+    return;
+  }
+  project.forEach(project => {
+    const article = document.createElement('article');
+    article.innerHTML = `
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <p>${project.description}</p>
+    `;
+    containerElement.appendChild(article);
+});
+}
