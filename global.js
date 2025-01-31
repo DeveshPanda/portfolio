@@ -114,3 +114,7 @@ const container = document.querySelector('.projects');
 renderProjects(projectsData, container, 'h3');
 */
 
+export async function fetchGitHubData(username) {
+  // return statement here
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
