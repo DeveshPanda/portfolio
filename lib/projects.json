@@ -1,33 +1,39 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque aliquam nobis iste praesentium sapiente quae fuga cumque porro aspernatur quos illo impedit aut, nihil necessitatibus suscipit accusamus cum eligendi dolores."
+        "title": "Analyzing four factors of basketball.",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "year": "2024",
+        "description": "Research Project for Cogs 108"
     },
     {
-        "title": "Tenetur qui amet natus.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Totam sint quis repudiandae, aut illo praesentium odio hic culpa vero ab at deserunt, id nostrum? Inventore temporibus unde dicta ullam pariatur in? Asperiores exercitationem, vitae a laudantium cum debitis."
+        "title": "Expository Visualiation.",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "year": "2025",
+        "description": "Created an expository visualization based on a small dataset."
     },
     {
-        "title": "Optio doloremque delectus non.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tempora architecto quisquam aperiam eius, voluptate, porro et placeat reiciendis ratione optio vel eos alias accusantium laboriosam repudiandae quibusdam dicta quidem magni debitis! Pariatur consectetur commodi quos molestias, reiciendis ipsa?"
+        "title": "Deceptive Visualiation.",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "year": "2025",
+        "description": "Showing comparisons between earnest and deceptive visualizations based on research data."
     },
     {
-        "title": "Doloremque dolore tenetur atque.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Expedita quidem dolorum, aperiam velit tenetur alias omnis harum sunt asperiores, ratione iusto consequatur porro eaque distinctio quasi magni dicta inventore dolores veritatis ab? Alias doloribus excepturi tempora corporis quae!"
+        "title": "Recipes and Ratings",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "year": "2024",
+        "description": "Showing comparisons between recipes based on their recipes, given a dataset of assorted food recipes from DSC80"
     },
     {
-        "title": "Quam hic ea delectus.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Inventore, animi totam debitis deserunt modi illum, ipsum eum ducimus culpa, facilis veniam! A, quibusdam numquam deleniti harum quae sunt temporibus architecto molestiae quaerat atque iste omnis quod, et aliquid!"
+        "title": "Oregon Trail Simulator",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "year": "2022",
+        "description": "Developed C++ scripts to reconstruct the original Oregon Trail product with modifications."
     },
     {
-        "title": "Ex nobis est quam?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptas ex ad delectus praesentium consectetur nihil natus veniam sequi eos aut ullam omnis quia, dolor voluptatum tempore sunt cupiditate ducimus laudantium doloremque laborum alias expedita. Quis odit temporibus deserunt!"
+        "title": "Food Swap",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "year": "2019",
+        "description": "Developed a full-stack application to allow restaurants and homeless shelters to communicate with one another to provide food for little to no cost."
     },
     {
         "title": "Minus, similique a! Non!",
