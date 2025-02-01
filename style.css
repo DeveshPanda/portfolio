@@ -150,22 +150,21 @@ body {
     dl {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      border: 1px solid #ccc;
+      gap: 0.5em;
+      /*border: 1px solid #ccc;
       padding: 15px;
       border-radius: 8px;
-      background-color: #f9f9f9;
-      display: none;
-      position: absolute;
+      background-color: #f9f9f9;*/
     }
   
     dt {
       grid-row: 1;
       font-weight: bold;
-      color: #333;
+      color: #1b1bc7;
     }
   
     dd {
       grid-row: 2;
-      margin: 0; /* Remove default margin */
+      margin: 0;
     }
 
