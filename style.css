@@ -125,3 +125,17 @@ body {
     /*box-shadow: 0 4px 8px oklch(40% 0.05 250 / 0.1);
     background-color: oklch(90% 10% 265); */
     }
+
+    dl {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    dt {
+      grid-row: 1;
+    }
+  
+    dd {
+      grid-row: 2;
+      margin: 0; /* Remove default margin */
+    }
