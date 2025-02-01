@@ -126,7 +126,7 @@ body {
     background-color: oklch(90% 10% 265); */
     }
 
-    #profile-stats {
+    /*#profile-stats {
       width: 320px;
       border: 1px solid #ccc;
       padding: 15px;
@@ -145,15 +145,23 @@ body {
       margin-bottom: 10px;
       text-align: center;
       color: #333;
-    }
-    
+    }*/
+
     dl {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      display: none;
+      position: absolute;
     }
   
     dt {
       grid-row: 1;
+      font-weight: bold;
+      color: #333;
     }
   
     dd {
