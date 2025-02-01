@@ -126,20 +126,6 @@ body {
     background-color: oklch(90% 10% 265); */
     }
 
-    dl {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-  
-    dt {
-      grid-row: 1;
-    }
-  
-    dd {
-      grid-row: 2;
-      margin: 0; /* Remove default margin */
-    }
-
     #profile-stats {
       width: 320px;
       border: 1px solid #ccc;
@@ -160,3 +146,18 @@ body {
       text-align: center;
       color: #333;
     }
+    
+    dl {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    dt {
+      grid-row: 1;
+    }
+  
+    dd {
+      grid-row: 2;
+      margin: 0; /* Remove default margin */
+    }
+
