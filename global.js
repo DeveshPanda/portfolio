@@ -90,6 +90,15 @@ for (let p of pages) {
     }
 }
 
+/*
+project.forEach(project => {
+    const article = document.createElement('article');
+    article.innerHTML = `
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <p>${project.description}</p>
+    `;
+*/
 export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   
@@ -102,7 +111,10 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       <img src="${project.image}" alt="${project.title}">
-      <p>${project.description}</p>
+      <div class="project-text">
+          <p>${project.description}</p>
+          <p class="project-year">${project.year}</p>
+      </div>
     `;
     containerElement.appendChild(article);
   });
