@@ -171,3 +171,24 @@ body {
       margin: 0;
     }
 
+    .project-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+  }
+  
+  .project-year {
+      font-family: Baskerville, "Baskerville Old Face", serif;
+      font-variant-numeric: oldstyle-nums;
+      font-size: 0.9em;
+      margin: 0;
+  }
+  
+  #projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+  
+    overflow: visible;
+  }
+  
+
