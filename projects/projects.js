@@ -13,7 +13,7 @@ if (projectsTitle) {
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
-let selectedIndex = -1; // Track the current selection
+let selectedIndex = -1; 
 
 function renderPieChart(filteredProjects) {
     let svg = d3.select('svg');
@@ -48,3 +48,51 @@ function renderPieChart(filteredProjects) {
             .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
     });
 }
+
+function handleArcClick(idx, data) {
+    let svg = d3.select('svg');
+    let legend = d3.select('.legend');
+
+    // Toggle selection
+    selectedIndex = selectedIndex === idx ? -1 : idx;
+
+    svg.selectAll('path')
+        .attr('class', (_, arcIdx) => (arcIdx === selectedIndex ? 'selected' : ''));
+
+    legend.selectAll('li')
+        .attr('class', (_, arcIdx) => (arcIdx === selectedIndex ? 'selected' : ''));
+
+    let filteredProjects = projects;
+
+    if (selectedIndex !== -1) {
+        let selectedYear = data[selectedIndex].label;
+        filteredProjects = filteredProjects.filter((project) => project.year === selectedYear);
+    }
+
+    if (query) {
+        filteredProjects = filteredProjects.filter((project) => {
+            let values = Object.values(project).join('\n').toLowerCase();
+            return values.includes(query.toLowerCase());
+        });
+    }
+
+    renderProjects(filteredProjects, projectsContainer, 'h2');
+}
+
+let query = '';
+let searchInput = document.querySelector('.searchBar');
+
+searchInput.addEventListener('input', (event) => {
+    query = event.target.value;
+
+    let filteredProjects = projects.filter((project) => {
+        let values = Object.values(project).join('\n').toLowerCase();
+        return values.includes(query.toLowerCase());
+    });
+
+    renderProjects(filteredProjects, projectsContainer, 'h2');
+    renderPieChart(filteredProjects);
+});
+
+
+renderPieChart(projects);
