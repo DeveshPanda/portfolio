@@ -203,7 +203,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     width: 100%;
     list-style: none;
-    border: 0.1px solid hsla(240, 4%, 5%, 0);
+    border: 0.1px solid hsla(240, 4%, 5%, 0.813);
     border-radius: 4px;
   }
 
@@ -223,7 +223,7 @@ body {
   }
   
   .selected {
-    --color: oklch(95.87% 0.3134 113.29) !important;
+    --color: oklch(95.87% 0.3134 250) !important;
   
     &:is(path) {
       fill: var(--color);
