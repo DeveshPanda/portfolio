@@ -203,7 +203,30 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     width: 100%;
     list-style: none;
-    border: 0.1px solid #ccc;
+    border: 0.1px solid hsla(0, 0%, 80%, 0.077);
     border-radius: 4px;
+  }
+
+  .container{
+    display: flex;
+    flex: 1;
+    gap: 0.5em;
+  }
+  
+  svg:has(path:hover) path:not(:hover) {
+    opacity: 0.5;
+  }
+  
+  path {
+    transition: 300ms;
+    cursor: pointer;
+  }
+  
+  .selected {
+    --color: oklch(95.87% 0.3134 113.29) !important;
+  
+    &:is(path) {
+      fill: var(--color);
+    }
   }
 
