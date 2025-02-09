@@ -38,7 +38,7 @@ function renderPieChart(filteredProjects) {
         svg.append('path')
             .attr('d', arc)
             .attr('fill', colors(idx))
-            .on('click', () => handleArcClick(idx, data));
+            .on('click', () => handleQuery(idx, data));
     });
 
     let legend = d3.select('.legend');
@@ -49,7 +49,7 @@ function renderPieChart(filteredProjects) {
     });
 }
 
-function handleArcClick(idx, data) {
+function handleQuery(idx, data) {
     let svg = d3.select('svg');
     let legend = d3.select('.legend');
 
